@@ -1,16 +1,24 @@
 {
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --port 17001",
     "build": "next build",
     "start": "next start"
   },
   "dependencies": {
+    "@ant-design/icons": "^4.8.0",
+    "@next/font": "^13.0.6",
+    "antd": "^5.0.3",
+    "axios": "^1.2.0",
+    "classnames": "^2.3.2",
     "next": "latest",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "tailwind-scrollbar": "^2.0.1",
+    "tailwind-scrollbar-hide": "^1.1.7"
   },
   "devDependencies": {
+    "@types/axios": "^0.14.0",
     "@types/node": "18.11.3",
     "@types/react": "18.0.21",
     "@types/react-dom": "18.0.6",
