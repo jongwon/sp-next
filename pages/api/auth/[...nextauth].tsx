@@ -15,7 +15,7 @@ export default NextAuth({
         credentials: Record<"username" | "password", string> | undefined,
         req: any
       ): Promise<any> => {
-        // 만약에 token 이 오래되어 만료되었다면, refresh token 을 이용하여 token 을 재발급 받는다.
+        /*
         const token = await (
           await fetch(`${process.env.NEXT_PUBLIC_API_URL}/login`, {
             method: "POST",
@@ -47,6 +47,14 @@ export default NextAuth({
         } else {
           return null;
         }
+        */
+        return {
+          user: { name: "jongwon" },
+          token: {
+            accessToken: "access_token",
+            refreshToken: "refresh_token",
+          },
+        };
       },
     }),
   ],

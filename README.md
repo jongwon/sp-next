@@ -7,7 +7,7 @@ npx create-next-app --example https://github.com/jongwon/sp-next
 ## dependencies
 
 - typescript
-- tailwindcss
+- tailwindcss : scroll-bar, scroll-bar-hide
 - postcss
 - autoprefixer
 - antd
@@ -15,5 +15,6 @@ npx create-next-app --example https://github.com/jongwon/sp-next
 - axios
 - classnames
 - @next/font
+- next-auth : 로그인해야 들어올 수 있음.
 
 ## 추가 가
