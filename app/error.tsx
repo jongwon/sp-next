@@ -2,13 +2,7 @@
 
 import { useEffect } from "react";
 
-export default function Error({
-  error,
-  reset,
-}: {
-  error: Error;
-  reset: () => void;
-}) {
+const Error = ({ error, reset }: { error: Error; reset: () => void }) => {
   useEffect(() => {
     // Log the error to an error reporting service
     console.error(error);
@@ -20,4 +14,6 @@ export default function Error({
       <button onClick={() => reset()}> 오류 무시 </button>
     </div>
   );
-}
+};
+
+export default Error;

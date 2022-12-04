@@ -1,5 +1,9 @@
-import "../styles/globals.css";
+// "use client";
+
 import "antd/dist/reset.css";
+import "../styles/globals.css";
+
+import ErrorBoundary from "antd/es/alert/ErrorBoundary";
 
 export default function RootLayout({
   children,
@@ -9,7 +13,10 @@ export default function RootLayout({
   return (
     <html>
       <head />
-      <body>{children}</body>
+      <body>
+        {children}
+        {/* <ErrorBoundary>{children}</ErrorBoundary> */}
+      </body>
     </html>
   );
 }
